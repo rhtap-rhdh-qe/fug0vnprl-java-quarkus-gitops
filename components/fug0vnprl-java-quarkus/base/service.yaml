@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: fug0vnprl-java-quarkus
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: fug0vnprl-java-quarkus 
+  name: fug0vnprl-java-quarkus
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: fug0vnprl-java-quarkus 
